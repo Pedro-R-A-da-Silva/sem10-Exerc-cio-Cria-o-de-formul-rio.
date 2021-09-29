@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio</title>
+
+  <!-- Bootstrap - CSS -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!-- Toolbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          Coffee
+          <small>Arábica</small>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Cardápio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section class="my-3">
+
+      <!-- Grid -->
+
+      <!-- botao: adicionar-->
+      <div class="container">
+        <!-- Button:adicionar -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+             (+)
+          </button>
+
+        <!-- Modal:adicionar -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">adicionar item:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                    <!--nome-->
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" name="nome" id="nome" class="form-control">
+                    <!--descricao-->
+                    <div class="form-group">
+                    <label for="descriçao" class="form-label">Descriçao</label>
+                    <input type="text" name="descriçao do produto" id="descriçao" class="form-control">
+                    <small id="emailHelp" class="form-text text-muted">descreva o novo produto.</small>
+                    </div>
+                    <!--preço-->
+                    <div class="form-group ">
+                    <label for="preço" class="form-label">Preço</label>
+                    <input type="text" name="preço" id="preço" class="form-control">
+                    </div>
+                    <!--imagem-->
+                    <div class="form-group row">
+                      <label for="exampleFormControlFile1" class="form-label">imagem:</label>
+                      <input type="file" name="imagem" id="imagem" class="form-control-file" id="imagem">
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">fechar</button>
+                      <button input type="reset"  class="btn btn-primary" value="Limpar">Limpar</button>
+                      <button type="button" class="btn btn-warning">cadastrar novo item</button>        
+                    </div>
+                    
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linha -->
+        <div id="itens-cardapio" class="row">
+
+          <!-- Colunas-->
+
+          <!-- beforeend -->
+        </div>
+
+    </section>
+
+  </main>
+  <footer></footer>
+
+  <!-- Cardápio -->
+  <script src="./js/cardapio.js"></script>
+
+  <!-- Bootstrap - Js -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
